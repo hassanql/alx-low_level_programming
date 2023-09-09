@@ -1,7 +1,8 @@
 #include <stdio.h>
+
+
 /**
-* main -prints all possible different combinations of two digits
-* in ascending order, separated by a comma followed by a space.
+* main - prints the lowercase alphabet in reverse, followed by a new line
 *
 * Return: Always 0.
 *
@@ -9,25 +10,13 @@
 
 int main(void)
 {
-	int digit1, digit2;
+	char letter;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
-	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
+	for (letter = 'z'; letter >= 'a'; letter--)
 
-			if (digit1 == 8 && digit2 == 9)
-			continue;
+	putchar(letter);
 
-
-			putchar(',');
-			putchar(' ');
-		}
-	}
 	putchar('\n');
 
 	return (0);
-
 }
