@@ -18,8 +18,7 @@
 		if (num == 9)
 			continue;
 
-		putchar('\n');
-
 	}
+	putchar("\n")
 	return (0);
 }
